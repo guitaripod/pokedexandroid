@@ -6,7 +6,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -52,7 +52,7 @@ fun PokemonDetailScreen(
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(
-                            imageVector = Icons.Default.ArrowBack,
+                            imageVector = Icons.AutoMirrored.Filled.ArrowBack,
                             contentDescription = "Back"
                         )
                     }
@@ -275,7 +275,7 @@ fun PokemonDetailScreen(
                                     )
                                 }
                                 
-                                Divider(
+                                HorizontalDivider(
                                     modifier = Modifier.padding(vertical = 8.dp),
                                     color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.3f)
                                 )
